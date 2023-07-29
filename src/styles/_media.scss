@@ -1,0 +1,91 @@
+
+@media (max-width: 1250px) {
+    #root {
+        height: auto;
+        padding: 96px 24px;
+    }
+
+    .pattern-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        &.desktop {
+            visibility: hidden;
+        }
+        &.mobile {
+            visibility: visible;
+        }
+    }
+
+    .pattern-bottom {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    
+        &.desktop {
+            visibility: hidden;
+        }
+
+        &.mobile {
+            visibility: visible;
+        }
+    }
+
+    .main {
+        gap: 48px;
+
+        .top {
+            flex-direction: column;
+            height: auto;
+            gap: 48px;
+            align-items: center;
+
+            .info {
+                width: auto;
+                width: 100%;
+                max-width: 480px;
+
+                .title {
+                    width: auto;
+                    text-align: center;
+                }
+
+                .description {
+                    text-align: center;
+                }
+            }
+
+            .reviews {
+                width: 100%;
+                max-width: 480px;
+
+                .review {
+                    width: auto;
+                    align-self: auto !important;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 16px;
+                    padding: 16px 24px;
+                    
+                    .stars {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+
+        .proofs {
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+                max-width: 480px;
+
+            .proof {
+                align-self: auto !important;
+            }
+        }
+    }
+}
